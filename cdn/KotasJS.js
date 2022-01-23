@@ -10,19 +10,19 @@
 class KotasJS {
   constructor(params = {}) {
     params = {
-      treshold: params.treshold || 50,
+      threshold: params.threshold || 50,
       linelength: params.linelength || 150,
     }
 
     /**
-     * @property {number} TRESHOLD Treshold for swipe detection
+     * @property {number} THRESHOLD Treshold for swipe detection
      * @default 50
      * @type {number}
      * @example
-     * let kotas = new KotasJS({treshold:100})
+     * let kotas = new KotasJS({threshold:100})
      * 
     */
-    this.TRESHOLD = params.treshold;
+    this.THRESHOLD = params.threshold;
     /**
       * @property {number} LINE_LENGTH Line length for swipe detection
       * @default 150
@@ -148,7 +148,7 @@ class KotasJS {
   */
   #swipeDown(e, cb) {
     if (this.#swipeDownArray.length <= 0) this.#swipeDownArray.push({ x: e.x, y: e.y })
-    if (e.x > this.#swipeDownArray[0].x - this.TRESHOLD && e.x < this.#swipeDownArray[0].x + this.TRESHOLD && e.y > this.#swipeDownArray[this.#swipeDownArray.length - 1].y) {
+    if (e.x > this.#swipeDownArray[0].x - this.THRESHOLD && e.x < this.#swipeDownArray[0].x + this.THRESHOLD && e.y > this.#swipeDownArray[this.#swipeDownArray.length - 1].y) {
       this.#swipeDownArray.push({ x: e.x, y: e.y })
     } else {
       this.#swipeDownArray = [{ x: e.x, y: e.y }]
@@ -170,7 +170,7 @@ class KotasJS {
  */
   #swipeUp(e, cb) {
     if (this.#swipeUpArray.length <= 0) this.#swipeUpArray.push({ x: e.x, y: e.y })
-    if (e.x > this.#swipeUpArray[0].x - this.TRESHOLD && e.x < this.#swipeUpArray[0].x + this.TRESHOLD && e.y < this.#swipeUpArray[this.#swipeUpArray.length - 1].y) {
+    if (e.x > this.#swipeUpArray[0].x - this.THRESHOLD && e.x < this.#swipeUpArray[0].x + this.THRESHOLD && e.y < this.#swipeUpArray[this.#swipeUpArray.length - 1].y) {
       this.#swipeUpArray.push({ x: e.x, y: e.y })
     } else {
       this.#swipeUpArray = [{ x: e.x, y: e.y }]
@@ -193,7 +193,7 @@ class KotasJS {
   */
   #swipeRight(e, cb) {
     if (this.#swipeRightArray.length <= 0) this.#swipeRightArray.push({ x: e.x, y: e.y })
-    if (e.y > this.#swipeRightArray[0].y - this.TRESHOLD && e.y < this.#swipeRightArray[0].y + this.TRESHOLD && e.x > this.#swipeRightArray[this.#swipeRightArray.length - 1].x) {
+    if (e.y > this.#swipeRightArray[0].y - this.THRESHOLD && e.y < this.#swipeRightArray[0].y + this.THRESHOLD && e.x > this.#swipeRightArray[this.#swipeRightArray.length - 1].x) {
       this.#swipeRightArray.push({ x: e.x, y: e.y })
     } else {
       this.#swipeRightArray = [{ x: e.x, y: e.y }]
@@ -215,7 +215,7 @@ class KotasJS {
   */
   #swipeLeft(e, cb) {
     if (this.#swipeLeftArray.length <= 0) this.#swipeLeftArray.push({ x: e.x, y: e.y })
-    if (e.y > this.#swipeLeftArray[0].y - this.TRESHOLD && e.y < this.#swipeLeftArray[0].y + this.TRESHOLD && e.x < this.#swipeLeftArray[this.#swipeLeftArray.length - 1].x) {
+    if (e.y > this.#swipeLeftArray[0].y - this.THRESHOLD && e.y < this.#swipeLeftArray[0].y + this.THRESHOLD && e.x < this.#swipeLeftArray[this.#swipeLeftArray.length - 1].x) {
       this.#swipeLeftArray.push({ x: e.x, y: e.y })
     } else {
       this.#swipeLeftArray = [{ x: e.x, y: e.y }]
