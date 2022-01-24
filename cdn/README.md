@@ -1,6 +1,22 @@
 # KotasJS
 
-Capture mouse gestures, the easiest way possible!
+The only Javascript mouse gestures library!
+
+*First of its kind.*
+
+# Install
+
+##### Via Npm
+
+```shell
+npm i kotasjs
+```
+
+##### Via CDN
+
+```html
+<script src="Link will go there"></script>
+```
 
 # Usage
 
