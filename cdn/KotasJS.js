@@ -39,6 +39,10 @@ class KotasJS {
       * @property {number} id - Event id (0)
       * @property {string} event - Event name (swipe_down)
       * @property {string} eventshort - Event short name (down)
+      * @property {number} startX - Start X coordinate
+      * @property {number} startY - Start Y coordinate
+      * @property {number} endX - End X coordinate
+      * @property {number} endY - End Y coordinate
       * @memberof KotasJS
       * 
     */
@@ -154,7 +158,7 @@ class KotasJS {
       this.#swipeDownArray = [{ x: e.x, y: e.y }]
     }
     if (this.#swipeDownArray.length > this.LINE_LENGTH) {
-      cb({ id: 0, eventshort: "down", event: "swipe_down" })
+      cb({ id: 0, eventshort: "down", event: "swipe_down", startX: this.#swipeDownArray[0].x, startY: this.#swipeDownArray[0].y, endX: this.#swipeDownArray[this.#swipeDownArray.length - 1].x, endY: this.#swipeDownArray[this.#swipeDownArray.length - 1].y })
       this.#swipeDownArray = [{ x: e.x, y: e.y }]
     }
   }
@@ -176,7 +180,7 @@ class KotasJS {
       this.#swipeUpArray = [{ x: e.x, y: e.y }]
     }
     if (this.#swipeUpArray.length > this.LINE_LENGTH) {
-      cb({ id: 1, eventshort: "up", event: "swipe_up" })
+      cb({ id: 1, eventshort: "up", event: "swipe_up", startX: this.#swipeUpArray[0].x, startY: this.#swipeUpArray[0].y, endX: this.#swipeUpArray[this.#swipeUpArray.length - 1].x, endY: this.#swipeUpArray[this.#swipeUpArray.length - 1].y })
       this.#swipeUpArray = [{ x: e.x, y: e.y }]
     }
   }
@@ -199,7 +203,7 @@ class KotasJS {
       this.#swipeRightArray = [{ x: e.x, y: e.y }]
     }
     if (this.#swipeRightArray.length > this.LINE_LENGTH) {
-      cb({ id: 2, eventshort: "right", event: "swipe_right" })
+      cb({ id: 2, eventshort: "right", event: "swipe_right", startX: this.#swipeRightArray[0].x, startY: this.#swipeRightArray[0].y, endX: this.#swipeRightArray[this.#swipeRightArray.length - 1].x, endY: this.#swipeRightArray[this.#swipeRightArray.length - 1].y })
       this.#swipeRightArray = [{ x: e.x, y: e.y }]
     }
   }
@@ -221,7 +225,7 @@ class KotasJS {
       this.#swipeLeftArray = [{ x: e.x, y: e.y }]
     }
     if (this.#swipeLeftArray.length > this.LINE_LENGTH) {
-      cb({ id: 3, eventshort: "left", event: "swipe_left" })
+      cb({ id: 3, eventshort: "left", event: "swipe_left", startX: this.#swipeLeftArray[0].x, startY: this.#swipeLeftArray[0].y, endX: this.#swipeLeftArray[this.#swipeLeftArray.length - 1].x, endY: this.#swipeLeftArray[this.#swipeLeftArray.length - 1].y })
       this.#swipeLeftArray = [{ x: e.x, y: e.y }]
     }
   }
