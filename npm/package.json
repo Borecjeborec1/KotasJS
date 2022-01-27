@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "KotasJS.js",
   "description": "The first open-source mouse gestures library",
-  "scripts": {
-    "build:min": "minify ../npm/KotasJS.js > kotasjs.min.js"
-  },
+  "scripts": {},
   "author": "borecjeborec1",
   "keywords": [
     "mouse",

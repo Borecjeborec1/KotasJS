@@ -1,0 +1,68 @@
+@import "../utils/setup";
+
+header {
+  border-bottom: 2px solid $green;
+  padding: 10px;
+  display: flex;
+
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $green;
+    }
+
+  }
+
+  .selected {
+    color: #344440;
+  }
+
+  .container {
+    width: 45%;
+    margin: auto;
+  }
+
+  .logo {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+
+    a {
+      transition: .4s ease;
+    }
+  }
+
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: .5rem;
+      margin: 0 .3rem;
+      cursor: pointer;
+
+
+      a {
+        transition: .4s ease;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  header .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  header .container {
+    width: 100%;
+  }
+}

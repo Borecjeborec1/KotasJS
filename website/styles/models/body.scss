@@ -1,0 +1,8 @@
+@import "../utils/setup";
+
+body {
+  background-color: $bg;
+  font-family: 'Exo 2', sans-serif;
+  color: $whiteText;
+  overflow: hidden;
+}

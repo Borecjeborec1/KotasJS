@@ -1,0 +1,11 @@
+{
+  "name": "kotasjs-website",
+  "version": "1.0.0",
+  "description": "website for kotasjs",
+  "main": "index.js",
+  "scripts": {
+    "build:doc": "jsdoc ../npm/KotasJS.js -t ./node_modules/ink-docstrap/template"
+  },
+  "author": "borecjeborec1",
+  "license": "MIT"
+}

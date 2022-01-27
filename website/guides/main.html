@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/guides.css">
+  <script defer src="../scripts/script.js"></script>
+  <script defer src="../scripts/pregen.js"></script>
+  <title>KotasJS Guides</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html">
+          KotasJS
+        </a>
+      </div>
+      <ul>
+        <li> <a href="../index.html">Home</a></li>
+        <li> <a href="../jsdoc/KotasJS.html">Docs</a></li>
+        <li>
+          <a class="selected" href="../guides/main.html">Guides</a>
+        </li>
+        <li> <a onclick='openInNewTab("https://github.com/borecjeborec1/KotasJS");'>Github</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <div class="content">
+    <div class="container">
+      <div class="text">
+        <div id="gettingstarted" class="swap">
+          <h1>Getting started</h1>
+          <h3>Enviroment Setup</h3>
+          <h5>1) Using CDN:</h5>
+          <p>The easiest way of adding KotasJS to your projects, is via CD</p>
+          <p>Just add this tag into your HTML, just before your actual script tag, and everything is done!</p>
+          <pre id="highntt">&ltscript src="https://cdn.jsdelivr.net/gh/user/repo@version/file"&gt&lt/script&gt</pre>
+          <pre id="lowntt">https://cdn.jsdelivr.net/gh/user/repo@version/file</pre>
+          <h5>2) Download with NPM:</h5>
+          <p>If you are using some npm based frameworks like <i>React, Vue, Svelte, etc.</i> then you can install the
+            package with this command:</p>
+          <pre>npm install kotasjs</pre>
+          <h5>3) Source code Download:</h5>
+          <p>This is the hardest variant for maintain, cause you have a script more. But if you want, just grap the code
+            from
+            <a onclick='openInNewTab("https://github.com/borecjeborec1/KotasJS");'>Github</a>, and download the
+            <i>KotasJS.js</i> file.
+          </p>
+          <h3>JavaScript Setup</h3>
+          <p>After linking your JS file to your HTML file, you should initialize the KotasJS class.</p>
+          <pre>const kotas = new KotasJS()</pre>
+          <p>Now you have fully functional kotas instance, which you can use.</p>
+        </div>
+        <div id="examples" class="swap hidden">
+          <h1>Examples</h1>
+          <h3>Hello World!</h3>
+          <p>Let's start with the basics. Create a simple hello world app with KotasJS.</p>
+          <p><b>index.html</b></p>
+          <pre class="preHWHTML"></pre>
+          <p>Whats going on here? Just a basic HTML structure with including our scrips. The funny part will be in our
+            script.js!</p>
+          <p><b>script.js</b></p>
+          <pre class="preHWJS"></pre>
+          <p>And what going on here? At first we initialized our KotasJS class and set that instance as constant
+            variable kotas.</p>
+          <p>Our kotas, has only one public method - <i>on</i>. This method let us capture all of the available events.
+            See <a href="">Syntax</a>
+          </p>
+          <p>All the coding is done! Everytime you swipe left (without any key pressed), the "Hello world!" message will
+            pop out!</p>
+          <p>Source code: <a onclick='openInNewTab("https://github.com/borecjeborec1/KotasJS");'>Github</a></p>
+        </div>
+        <div id="syntaxes" class="swap hidden">
+          <h1>Syntaxes</h1>
+          <h3>on</h3>
+          <p>LepikJS has only one public method - <i>on</i>. This on method allows you to listen to different events.
+          </p>
+          <table>
+            <tr>
+              <th>Event</th>
+              <th>Aliases</th>
+              <th>ID</th>
+              <th>Use case</th>
+            </tr>
+            <tr>
+              <td>swipe_down</td>
+              <td>down</td>
+              <td>0</td>
+              <td>kotas.on("swipe_down",(e)=>alert(e.event))</td>
+            </tr>
+            <tr>
+              <td>swipe_up</td>
+              <td>up</td>
+              <td>1</td>
+              <td>kotas.on("swipe_up",(e)=>alert(e.event))</td>
+            </tr>
+            <tr>
+              <td>swipe_left</td>
+              <td>left</td>
+              <td>2</td>
+              <td>kotas.on("swipe_left",(e)=>alert(e.event))</td>
+            </tr>
+            <tr>
+              <td>swipe_right</td>
+              <td>right</td>
+              <td>3</td>
+              <td>kotas.on("swipe_right",(e)=>alert(e.event))</td>
+            </tr>
+          </table>
+          <p>More events coming in the future. Like <i>Circle,L shape, Triange, etc...</i></p>
+        </div>
+        <div id="faq" class="swap hidden">
+          <h1>FAQ</h1>
+          <h3>Will there be more events?</h3>
+          <p>Absolutely, I'm currently working on implementing circle shaped move. But some L shaped and triangles are
+            coming soon too!</p>
+          <h3>Does KotasJS support global mouse?</h3>
+          <p>Currently no, but KotasJS-global, will come soon!</p>
+          <h3>What if I find a bug?</h3>
+          <p>I would really appreciate getting feedback <a onclick="sendMail()">here</a>.</p>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="navli selected" onclick="swap(this)">Getting started</li>
+          <li class="navli" onclick="swap(this)">Examples</li>
+          <li class="navli" onclick="swap(this)">Syntaxes</li>
+          <li class="navli" onclick="swap(this)">FAQ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
