@@ -1,0 +1,15 @@
+{
+  "name": "kotasjs",
+  "version": "1.0.0",
+  "description": "The first open-source mouse gestures library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borecjeborec1/KotasJS.git"
+  },
+  "author": "borecjeborec1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borecjeborec1/KotasJS/issues"
+  },
+  "homepage": "https://github.com/borecjeborec1/KotasJS#readme"
+}
