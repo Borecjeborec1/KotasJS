@@ -4,6 +4,8 @@ The only Javascript mouse gestures library!
 
 *First of its kind.*
 
+Visit website [KotasJS](https://kotasjs.netlify.app/)
+
 # Install
 
 ##### Via Npm
