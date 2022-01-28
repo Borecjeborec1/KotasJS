@@ -14,3 +14,12 @@ function swap(e) {
   }
 }
 
+
+function copy(e) {
+  console.log(e.parentNode.innerText);
+  navigator.clipboard.writeText(e.parentNode.innerText);
+  e.className = "fa fa-check";
+  setTimeout(() => {
+    e.className = "fa fa-copy";
+  }, 1000);
+}

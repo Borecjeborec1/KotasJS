@@ -176,11 +176,14 @@ body {
 }
 
 .content .container .text pre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 0.2rem;
   border: 0.1px solid rgba(184, 184, 184, 0.288);
   background-color: #1c5244;
@@ -188,6 +191,26 @@ body {
   word-break: break-all;
   word-wrap: break-word;
   margin: 1rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .container .text pre i {
+  color: #e4e4e4;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  right: 1px;
 }
 
 .content .container .nav {
@@ -270,6 +293,11 @@ body {
 
 #lowntt {
   display: none;
+  font-size: x-small;
+}
+
+#highntt {
+  font-size: x-small;
 }
 
 @media only screen and (max-width: 933px) {
@@ -310,7 +338,7 @@ body {
     padding: .5rem;
   }
   #lowntt {
-    font-size: x-small;
+    font-size: 2.2vw;
   }
   .content .container table {
     margin: 0;

@@ -17,7 +17,7 @@ PS: KotasJS uses document.addEventListener in the background, so you need to hav
 ##### Via CDN
 
 ```html
-<script src="Link will go there"></script>
+<script src="https://cdn.jsdelivr.net/gh/borecjeborec1/kotasjs/cdn/kotasjs.min.js"></script>
 ```
 
 # Usage
