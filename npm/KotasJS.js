@@ -73,6 +73,8 @@ class KotasJS {
   */
   #swipeDownArray = []
 
+  #mult = []
+
   /**
    * 
    * <p>Currently there are only 4 events right now: <b>swipe_down</b>, <b>swipe_up</b>, <b>swipe_left</b>, <b>swipe_right</b></p>
@@ -160,6 +162,7 @@ class KotasJS {
     if (this.#swipeDownArray.length > this.LINE_LENGTH) {
       cb({ id: 0, eventshort: "down", event: "swipe_down", startX: this.#swipeDownArray[0].x, startY: this.#swipeDownArray[0].y, endX: this.#swipeDownArray[this.#swipeDownArray.length - 1].x, endY: this.#swipeDownArray[this.#swipeDownArray.length - 1].y })
       this.#swipeDownArray = [{ x: e.x, y: e.y }]
+      this.#mult = ["down"]
     }
   }
 
@@ -229,7 +232,8 @@ class KotasJS {
       this.#swipeLeftArray = [{ x: e.x, y: e.y }]
     }
   }
-
+  #downRight(e, cb) {
+  }
   /**
    *  
    * @property {function} all Callback function for all detection

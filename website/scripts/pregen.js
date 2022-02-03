@@ -3,7 +3,7 @@ let preHWJS = document.querySelector(".preHWJS")
 preHWHTML.innerText = `<!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="cdnlink"></script>
+    <script src="https://cdn.jsdelivr.net/gh/borecjeborec1/kotasjs/cdn/kotasjs.min.js"></script>
     <script src="script.js"></script>
   </head>
 
