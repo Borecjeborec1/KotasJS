@@ -1,6 +1,6 @@
 {
   "name": "kotasjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "KotasJS.js",
   "description": "The first open-source mouse gestures library",
   "scripts": {},
