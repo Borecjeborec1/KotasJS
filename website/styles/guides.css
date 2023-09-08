@@ -3,63 +3,49 @@
 * {
   padding: 0%;
   margin: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
   border-bottom: 2px solid #0ce3ac;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
-
 header a:hover {
   color: #0ce3ac;
 }
-
 header .selected {
   color: #344440;
 }
-
 header .container {
   width: 45%;
   margin: auto;
 }
-
 header .logo {
   display: inline-block;
   cursor: pointer;
   font-size: 1.8rem;
 }
-
 header .logo a {
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
-
 header ul {
   float: right;
   list-style: none;
 }
-
 header ul li {
   display: inline-block;
-  padding: .5rem;
-  margin: 0 .3rem;
+  padding: 0.5rem;
+  margin: 0 0.3rem;
   cursor: pointer;
 }
-
 header ul li a {
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 @media only screen and (max-width: 930px) {
@@ -67,119 +53,95 @@ header ul li a {
     display: none;
   }
 }
-
 @media only screen and (max-width: 710px) {
   header .container {
     width: 100%;
   }
 }
-
 * {
   padding: 0%;
   margin: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #222;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   color: #e4e4e4;
   overflow: hidden;
 }
 
 .content {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 3rem auto;
   width: 50%;
   overflow: hidden;
 }
-
 .content .container {
   height: 100%;
 }
-
 .content .container table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   margin: 1rem;
 }
-
 .content .container td,
 .content .container th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-
 .content .container tr:nth-child(even) {
   background-color: #353535;
 }
-
 .content .container .text {
   float: left;
   width: 60%;
 }
-
 .content .container .text .swap {
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
-
 .content .container .text .hidden {
   display: none;
 }
-
 .content .container .text .anim {
   opacity: 0;
 }
-
 .content .container .text .animIn {
   opacity: 1;
 }
-
 .content .container .text a {
   color: #0ce3ac;
   text-decoration: none;
   cursor: pointer;
 }
-
 .content .container .text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #299b7e;
 }
-
 .content .container .text h3 {
   font-size: 1.7rem;
   font-weight: bold;
   margin: 1rem 0;
   color: #2b6e5d;
 }
-
 .content .container .text h5 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 .content .container .text p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
-
 .content .container .text p b {
   color: #97c5b9;
 }
-
 .content .container .text pre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -191,21 +153,12 @@ body {
   word-break: break-all;
   word-wrap: break-word;
   margin: 1rem 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
   overflow-x: scroll;
 }
-
 .content .container .text pre i {
   color: #e4e4e4;
   font-size: 1.1rem;
@@ -213,42 +166,53 @@ body {
   position: relative;
   right: 1px;
 }
-
 .content .container .nav {
   float: right;
   margin-top: 5rem;
 }
-
 .content .container .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: left;
 }
-
 .content .container .nav ul a {
   color: #e4e4e4;
   text-decoration: none;
   cursor: pointer;
 }
-
 .content .container .nav ul li {
   font-size: 1.1rem;
   padding: 1rem;
   padding-right: 8rem;
-  border-radius: .5rem;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
-  margin: .15rem 0;
+  border-radius: 0.5rem;
+  transition: 0.4s ease;
+  margin: 0.15rem 0;
   cursor: pointer;
 }
-
 .content .container .nav ul li:hover {
-  background-color: #20685650;
+  background-color: rgba(32, 104, 86, 0.3137254902);
 }
-
 .content .container .nav ul .selected {
   background-color: #206856;
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
 }
 
 @media only screen and (max-width: 1850px) {
@@ -256,34 +220,28 @@ body {
     width: 60%;
   }
 }
-
 @media only screen and (max-width: 1510px) {
   .content {
     width: 70%;
   }
 }
-
 @media only screen and (max-width: 1294px) {
   .content {
     width: 80%;
   }
 }
-
 @media only screen and (max-width: 1132px) {
   .content {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 1132px) {
   .content .container .nav ul li {
     padding-right: 1rem;
   }
 }
-
 @media only screen and (max-width: 1120px) {
   .content .container .text pre {
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
   }
@@ -291,7 +249,6 @@ body {
     overflow-y: scroll;
   }
 }
-
 #lowntt {
   display: none;
   font-size: x-small;
@@ -309,7 +266,6 @@ body {
     display: none;
   }
 }
-
 @media only screen and (max-width: 658px) {
   .content {
     margin-top: 4rem;
@@ -327,16 +283,13 @@ body {
     margin-bottom: 1rem;
   }
   .content .container .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .content .container .nav ul li {
-    font-size: .9rem;
-    padding: .5rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
   #lowntt {
     font-size: 2.2vw;
@@ -345,10 +298,8 @@ body {
     margin: 0;
   }
 }
-
 @media only screen and (max-width: 460px) {
   .content .container table {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-}
-/*# sourceMappingURL=guides.css.map */
+}/*# sourceMappingURL=guides.css.map */
